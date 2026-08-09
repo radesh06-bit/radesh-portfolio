@@ -1,3 +1,4 @@
+
 /* =========================================================
    GLOBAL
 ========================================================= */
@@ -299,25 +300,18 @@ nav ul a:hover {
 }
 
 
-/* YOUR PHOTO */
-
-.robot-image {
-    width: 100%;
-    height: 100%;
-
-    border-radius: 50%;
-
-    object-fit: cover;
-    object-position: center;
-
-    display: block;
-}
-
-
-/* If you use an AI icon instead of photo */
+/* =========================================================
+   AI ICON
+========================================================= */
 
 .ai-icon {
     font-size: 120px;
+
+    animation:
+        aiPulse 2s infinite ease-in-out;
+
+    filter:
+        drop-shadow(0 0 25px #00ffff);
 }
 
 
@@ -761,32 +755,56 @@ nav ul a:hover {
     gap: 35px;
 }
 
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
 .project-card {
+    position: relative;
+
     background:
         rgba(255, 255, 255, 0.05);
 
     border:
-        1px solid #222;
-
-    padding: 30px;
+        1px solid rgba(0, 255, 255, 0.25);
 
     border-radius: 25px;
 
     backdrop-filter: blur(10px);
 
-    transition: 0.5s;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        border-color 0.5s ease;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.08);
 }
 
+
+/* =========================================================
+   PROJECT CARD GLOW
+========================================================= */
+
 .project-card:hover {
+
     transform:
-        translateY(-20px)
-        scale(1.03);
+        translateY(-15px)
+        scale(1.02);
 
     border-color: #00ffff;
 
     box-shadow:
-        0 0 40px #00ffff55;
+        0 0 15px #00ffff,
+        0 0 35px rgba(0, 255, 255, 0.6),
+        0 0 70px rgba(0, 255, 255, 0.25);
 }
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
 
 .project-image {
     height: 180px;
@@ -815,6 +833,11 @@ nav ul a:hover {
     object-fit: cover;
 }
 
+
+/* =========================================================
+   PROJECT TEXT
+========================================================= */
+
 .project-card p {
     color: #aaa;
 
@@ -822,6 +845,11 @@ nav ul a:hover {
 
     margin: 20px 0;
 }
+
+
+/* =========================================================
+   PROJECT TAGS
+========================================================= */
 
 .tags {
     display: flex;
@@ -841,7 +869,13 @@ nav ul a:hover {
     font-size: 12px;
 }
 
+
+/* =========================================================
+   PROJECT BUTTONS
+========================================================= */
+
 .project-card button {
+
     margin-top: 25px;
 
     padding: 12px 25px;
@@ -853,14 +887,24 @@ nav ul a:hover {
     border: none;
 
     cursor: pointer;
+
+    color: black;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
+.project-card button:hover {
 
-/* =========================================================
-   VIEW PROJECT BUTTON
-========================================================= */
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 25px #00ffff;
+}
 
 .view-project {
+
     display: inline-block;
 
     margin-top: 25px;
@@ -883,6 +927,7 @@ nav ul a:hover {
 }
 
 .view-project:hover {
+
     transform: translateY(-5px);
 
     box-shadow:
@@ -895,29 +940,42 @@ nav ul a:hover {
 ========================================================= */
 
 .flip-card {
+
     perspective: 1000px;
 
     height: 500px;
 }
 
 .flip-inner {
+
     position: relative;
 
     width: 100%;
     height: 100%;
 
     transition:
-        transform 0.8s;
+        transform 0.8s ease;
 
     transform-style: preserve-3d;
 }
 
+
+/* FLIP */
+
 .flip-card.flipped .flip-inner {
-    transform: rotateY(180deg);
+
+    transform:
+        rotateY(180deg);
 }
+
+
+/* =========================================================
+   FRONT & BACK
+========================================================= */
 
 .flip-front,
 .flip-back {
+
     position: absolute;
 
     width: 100%;
@@ -930,17 +988,29 @@ nav ul a:hover {
 
     -webkit-backface-visibility: hidden;
 
-    border-radius: 20px;
+    border-radius: 25px;
 
     box-sizing: border-box;
 }
 
+
+/* FRONT */
+
 .flip-front {
+
     padding: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
 }
 
+
+/* BACK */
+
 .flip-back {
-    transform: rotateY(180deg);
+
+    transform:
+        rotateY(180deg);
 
     display: flex;
 
@@ -953,10 +1023,20 @@ nav ul a:hover {
     padding: 25px;
 
     text-align: center;
+
+    background:
+        rgba(255, 255, 255, 0.05);
 }
 
+
+/* =========================================================
+   BACK IMAGE
+========================================================= */
+
 .flip-back img {
+
     width: 85%;
+
     height: 220px;
 
     object-fit: cover;
@@ -967,14 +1047,22 @@ nav ul a:hover {
 }
 
 .flip-back h2 {
+
     margin: 10px 0;
 }
 
 .flip-back p {
+
     margin: 5px 0 20px;
 }
 
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
 .back-button {
+
     margin-top: 10px;
 
     padding: 10px 22px;
@@ -996,6 +1084,7 @@ nav ul a:hover {
 }
 
 .back-button:hover {
+
     background: #00ffff;
 
     color: black;
@@ -1014,6 +1103,7 @@ nav ul a:hover {
 }
 
 #contact form {
+
     display: flex;
 
     flex-direction: column;
@@ -1027,6 +1117,7 @@ nav ul a:hover {
 
 input,
 textarea {
+
     background: #111;
 
     border:
@@ -1041,6 +1132,7 @@ textarea {
 
 #contact input,
 #contact textarea {
+
     width: 100%;
 
     padding: 18px;
@@ -1058,16 +1150,19 @@ textarea {
 }
 
 textarea {
+
     height: 150px;
 }
 
 #contact textarea {
+
     height: 150px;
 
     resize: none;
 }
 
 form button {
+
     padding: 18px;
 
     background: #00ffff;
@@ -1080,6 +1175,7 @@ form button {
 }
 
 #contact button {
+
     width: 200px;
 
     padding: 15px;
@@ -1100,6 +1196,7 @@ form button {
 }
 
 #contact button:hover {
+
     box-shadow:
         0 0 25px #00ffff;
 
@@ -1113,6 +1210,7 @@ form button {
 ========================================================= */
 
 .admin-section {
+
     width: 90%;
 
     max-width: 900px;
@@ -1125,6 +1223,7 @@ form button {
 }
 
 .admin-section h1 {
+
     font-size: 55px;
 
     margin-bottom: 50px;
@@ -1144,6 +1243,7 @@ form button {
 
 #adminLogin,
 #responses {
+
     padding: 35px;
 
     border-radius: 20px;
@@ -1161,6 +1261,7 @@ form button {
 
 #adminLogin h2,
 #responses h2 {
+
     color: #00ffff;
 
     margin-bottom: 10px;
@@ -1168,10 +1269,12 @@ form button {
 
 #adminLogin p,
 #responses > p {
+
     margin-bottom: 25px;
 }
 
 #adminLogin input {
+
     display: block;
 
     width: 80%;
@@ -1196,6 +1299,7 @@ form button {
 
 #adminLogin button,
 #responses > button {
+
     margin-top: 15px;
 
     padding: 12px 30px;
@@ -1217,13 +1321,16 @@ form button {
 
 #adminLogin button:hover,
 #responses > button:hover {
-    transform: translateY(-3px);
+
+    transform:
+        translateY(-3px);
 
     box-shadow:
         0 0 20px #00ffff;
 }
 
 #loginMessage {
+
     color: #ff4444;
 
     margin-top: 15px;
@@ -1235,10 +1342,12 @@ form button {
 ========================================================= */
 
 #responseList {
+
     margin-top: 30px;
 }
 
 .response-card {
+
     text-align: left;
 
     padding: 25px;
@@ -1255,18 +1364,21 @@ form button {
 }
 
 .response-card h3 {
+
     color: #00ffff;
 
     margin-bottom: 10px;
 }
 
 .response-card p {
+
     color: #aaa;
 
     margin: 8px 0;
 }
 
 .response-card small {
+
     display: block;
 
     margin-top: 15px;
@@ -1275,6 +1387,7 @@ form button {
 }
 
 .delete-response {
+
     margin-top: 15px;
 
     padding: 8px 18px;
@@ -1291,11 +1404,13 @@ form button {
 }
 
 .delete-response:hover {
+
     box-shadow:
         0 0 15px #ff4444;
 }
 
 .no-responses {
+
     padding: 30px;
 
     margin-top: 20px;
@@ -1307,6 +1422,7 @@ form button {
 ========================================================= */
 
 footer {
+
     padding: 30px;
 
     text-align: center;
@@ -1323,6 +1439,7 @@ footer {
 ========================================================= */
 
 .particles {
+
     position: fixed;
 
     height: 100%;
@@ -1337,6 +1454,7 @@ footer {
 }
 
 .particle {
+
     position: absolute;
 
     height: 4px;
@@ -1356,6 +1474,7 @@ footer {
 @keyframes moveParticle {
 
     from {
+
         transform:
             translateY(100vh);
 
@@ -1363,10 +1482,12 @@ footer {
     }
 
     50% {
+
         opacity: 1;
     }
 
     to {
+
         transform:
             translateY(-100vh);
 
@@ -1382,6 +1503,7 @@ footer {
 @keyframes floating {
 
     50% {
+
         transform:
             translateY(-20px);
     }
@@ -1390,6 +1512,7 @@ footer {
 @keyframes slide {
 
     from {
+
         opacity: 0;
 
         transform:
@@ -1397,6 +1520,7 @@ footer {
     }
 
     to {
+
         opacity: 1;
 
         transform:
@@ -1404,7 +1528,32 @@ footer {
     }
 }
 
+
+/* AI PULSE */
+
+@keyframes aiPulse {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+        filter:
+            drop-shadow(0 0 15px #00ffff);
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+        filter:
+            drop-shadow(0 0 35px #00ffff);
+    }
+}
+
+
 .reveal {
+
     opacity: 0;
 
     transform:
@@ -1414,6 +1563,7 @@ footer {
 }
 
 .reveal.active {
+
     opacity: 1;
 
     transform:
@@ -1426,12 +1576,14 @@ footer {
 ========================================================= */
 
 body.light {
+
     background: #f5f5f5;
 
     color: #111;
 }
 
 body.light header {
+
     background:
         rgba(255, 255, 255, 0.7);
 }
@@ -1441,34 +1593,53 @@ body.light .stack-item,
 body.light .timeline-box,
 body.light .project-card,
 body.light .skill-card {
+
     background: white;
 
     color: #111;
 }
 
 body.light p {
+
     color: #444;
 }
 
 body.light nav a,
 body.light nav ul a {
+
     color: #111;
 }
 
 body.light #theme-toggle {
+
     color: #111;
 }
 
 body.light .project-card p {
+
     color: #444;
 }
 
 body.light .skill-card p {
+
     color: #444;
 }
 
 body.light .interest-card p {
+
     color: #444;
+}
+
+
+/* LIGHT THEME PROJECT GLOW */
+
+body.light .project-card:hover {
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 35px rgba(0, 255, 255, 0.5);
 }
 
 
@@ -1479,6 +1650,7 @@ body.light .interest-card p {
 @media (max-width: 900px) {
 
     .hero {
+
         flex-direction: column;
 
         text-align: center;
@@ -1487,27 +1659,33 @@ body.light .interest-card p {
     }
 
     .hero h1 {
+
         font-size: 55px;
     }
 
     .hero h2 {
+
         font-size: 28px;
     }
 
     .hero-image {
+
         margin-top: 50px;
     }
 
     .glow-circle {
+
         width: 280px;
         height: 280px;
     }
 
     nav ul {
+
         display: none;
     }
 
     .menu {
+
         display: block;
 
         font-size: 25px;
@@ -1516,27 +1694,33 @@ body.light .interest-card p {
     }
 
     .about-container {
+
         flex-direction: column;
     }
 
     .stats {
+
         flex-wrap: wrap;
     }
 
     .interest-box,
     .interests-container {
+
         grid-template-columns: 1fr;
     }
 
     .skills-container {
+
         grid-template-columns: 1fr;
     }
 
     .stack-container {
+
         gap: 15px;
     }
 
     .stack-item {
+
         width: 130px;
         height: 130px;
     }
@@ -1544,16 +1728,19 @@ body.light .interest-card p {
     .section h1,
     #tech-stack h1,
     .admin-section h1 {
+
         font-size: 42px;
     }
 
     .buttons {
+
         justify-content: center;
 
         flex-wrap: wrap;
     }
 
     .social {
+
         justify-content: center;
     }
 }
@@ -1566,92 +1753,55 @@ body.light .interest-card p {
 @media (max-width: 500px) {
 
     .hero h1 {
+
         font-size: 45px;
     }
 
     .hero h2 {
+
         font-size: 23px;
     }
 
     .hero p {
+
         font-size: 16px;
     }
 
     .glow-circle {
+
         width: 240px;
         height: 240px;
     }
 
+    .ai-icon {
+
+        font-size: 90px;
+    }
+
     .stack-item {
+
         width: 110px;
         height: 115px;
     }
 
     .stack-item img {
+
         width: 45px;
         height: 45px;
     }
 
     .stack-item span {
+
         font-size: 14px;
     }
 
     .flip-card {
+
         height: 450px;
     }
 
     #adminLogin input {
+
         width: 100%;
     }
-}
-.hero-image {
-    animation: floating 4s infinite;
-}
-
-.glow-circle {
-    height: 350px;
-    width: 350px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(
-            circle,
-            #00ffff33,
-            transparent
-        );
-
-    border: 1px solid #00ffff;
-
-    box-shadow:
-        0 0 80px #00ffff55;
-
-    overflow: hidden;
-}
-
-.ai-icon {
-    font-size: 120px;
-}
-.ai-icon {
-    font-size: 120px;
-    animation: aiPulse 2s infinite ease-in-out;
-    filter: drop-shadow(0 0 25px #00ffff);
-}
-
-@keyframes aiPulse {
-
-    0%, 100% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 15px #00ffff);
-    }
-
-    50% {
-        transform: scale(1.08);
-        filter: drop-shadow(0 0 35px #00ffff);
-    }
-
 }
