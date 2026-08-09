@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Radesh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- PARTICLES -->
+    <div class="particles"></div>
+
+
+    <!-- ===============================
+         NAVBAR
+    ================================ -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                RADESH<span>.</span>
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="techstack.html">Tech Stack</a>
+                </li>
+
+                <li>
+                    <a href="interest.html">Interests</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <button id="theme-toggle">
+                🌙
+            </button>
+
+            <div class="menu">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ===============================
+         CONTACT FORM
+    ================================ -->
+
+    <section class="section" id="contact">
+
+        <h1>
+            Contact Me
+        </h1>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ===============================
+         ADMIN LOGIN
+    ================================ -->
+
+    <section class="admin-section">
+
+        <div id="adminLogin">
+
+            <h2>
+                Admin Login
+            </h2>
+
+            <p>
+                Admin access to view user responses
+            </p>
+
+
+            <input
+                type="text"
+                id="adminUser"
+                placeholder="Admin Name"
+            >
+
+
+            <input
+                type="password"
+                id="adminPass"
+                placeholder="Password"
+            >
+
+
+            <button
+                type="button"
+                onclick="adminLogin()">
+
+                Login
+
+            </button>
+
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+
+        <!-- ===============================
+             USER RESPONSES
+        ================================ -->
+
+        <div
+            id="responses"
+            style="display: none;">
+
+            <h2>
+                User Responses
+            </h2>
+
+            <p>
+                Messages received from visitors
+            </p>
+
+
+            <div id="responseList">
+
+                <!-- Responses will appear here -->
+
+            </div>
+
+
+            <button
+                type="button"
+                onclick="adminLogout()">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+
+    <footer>
+
+        © 2026 Radesh | AI Engineer Portfolio
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
