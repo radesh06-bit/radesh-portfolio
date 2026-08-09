@@ -1,660 +1,645 @@
-<!DOCTYPE html>
-<html lang="en">
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
+<title>Projects | Radesh</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 
-    <title>Projects | Radesh</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <!-- PARTICLES -->
-    <div class="particles"></div>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 
-    <!-- NAVBAR -->
-
-    <header>
-
-        <nav>
-
-            <div class="logo">
-                RADESH<span>.</span>
-            </div>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="techstack.html">Tech Stack</a>
-                </li>
-
-                <li>
-                    <a href="interest.html">Interests</a>
-                </li>
-
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-
-            <button id="theme-toggle">🌙</button>
-
-            <div class="menu">☰</div>
-
-        </nav>
-
-    </header>
+<!-- PARTICLES -->
+<div class="particles"></div>
 
 
-    <!-- PROJECTS -->
+<!-- NAVBAR -->
 
-    <section class="section">
+<header>
 
-        <h1>My Projects</h1>
+    <nav>
+
+        <div class="logo">
+            RADESH<span>.</span>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="techstack.html">Tech Stack</a>
+            </li>
+
+            <li>
+                <a href="interest.html">Interests</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+        <button id="theme-toggle">🌙</button>
+
+        <div class="menu">☰</div>
+
+    </nav>
+
+</header>
 
 
-        <div class="projects">
+<!-- PROJECTS -->
+
+<section class="section">
+
+    <h1>My Projects</h1>
+
+    <div class="projects">
 
 
-            <!-- PROJECT 1 -->
+        <!-- PROJECT 1 -->
 
-            <div class="project-card flip-card">
+        <div class="project-card flip-card">
 
-                <div class="flip-inner">
+            <div class="flip-inner">
 
-                    <!-- FRONT -->
+                <div class="flip-front">
 
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            🔊
-                        </div>
-
-                        <h2>
-                            Smart Noise Monitoring System
-                        </h2>
-
-                        <p>
-                            IoT based intelligent monitoring system
-                            that detects noise levels and sends
-                            real-time alerts.
-                        </p>
-
-                        <div class="tags">
-                            <span>ESP32</span>
-                            <span>Blynk</span>
-                            <span>IoT</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
+                    <div class="project-image">
+                        🔊
                     </div>
 
+                    <h2>
+                        Smart Noise Monitoring System
+                    </h2>
 
-                    <!-- BACK -->
+                    <p>
+                        IoT based intelligent monitoring system
+                        that detects noise levels and sends
+                        real-time alerts.
+                    </p>
 
-                    <div class="flip-back">
-
-                        <img src="images/project1.jpg"
-                             alt="Smart Noise Monitoring System">
-
-                        <h2>
-                            Smart Noise Monitoring System
-                        </h2>
-
-                        <p>
-                            Real-time IoT based noise monitoring
-                            project using ESP32 and Blynk.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
+                    <div class="tags">
+                        <span>ESP32</span>
+                        <span>Blynk</span>
+                        <span>IoT</span>
                     </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project1.jpg"
+                         alt="Smart Noise Monitoring System">
+
+                    <h2>
+                        Smart Noise Monitoring System
+                    </h2>
+
+                    <p>
+                        Real-time IoT based noise monitoring
+                        project using ESP32 and Blynk.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
 
                 </div>
 
             </div>
-
-
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            🧠
-                        </div>
-
-                        <h2>
-                            Machine Learning Analytics
-                        </h2>
-
-                        <p>
-                            Prediction and classification models
-                            using Python and machine learning
-                            algorithms.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>ML</span>
-                            <span>Pandas</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project2.jpg"
-                             alt="Machine Learning Analytics">
-
-                        <h2>
-                            Machine Learning Analytics
-                        </h2>
-
-                        <p>
-                            Data-driven prediction and
-                            classification using machine learning.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            🤖
-                        </div>
-
-                        <h2>
-                            AI Ticket Management System
-                        </h2>
-
-                        <p>
-                            AI powered system that automatically
-                            categorizes and manages support requests.
-                        </p>
-
-                        <div class="tags">
-                            <span>NLP</span>
-                            <span>AI</span>
-                            <span>Cloud</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project3.jpg"
-                             alt="AI Ticket Management System">
-
-                        <h2>
-                            AI Ticket Management System
-                        </h2>
-
-                        <p>
-                            AI powered ticket classification
-                            and management system.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 4 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            💬
-                        </div>
-
-                        <h2>
-                            AI Chatbot
-                        </h2>
-
-                        <p>
-                            Intelligent chatbot that understands
-                            user queries and provides automated
-                            responses.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>NLP</span>
-                            <span>AI</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project4.jpg"
-                             alt="AI Chatbot">
-
-                        <h2>
-                            AI Chatbot
-                        </h2>
-
-                        <p>
-                            Natural language based chatbot
-                            for automated conversations.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 5 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            👁️
-                        </div>
-
-                        <h2>
-                            Face Detection System
-                        </h2>
-
-                        <p>
-                            Computer vision application that
-                            detects human faces from images
-                            and camera input.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>OpenCV</span>
-                            <span>AI</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project5.jpg"
-                             alt="Face Detection System">
-
-                        <h2>
-                            Face Detection System
-                        </h2>
-
-                        <p>
-                            Computer vision based face
-                            detection application.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 6 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            📊
-                        </div>
-
-                        <h2>
-                            Student Performance Predictor
-                        </h2>
-
-                        <p>
-                            Machine learning model that analyzes
-                            student data and predicts performance.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>ML</span>
-                            <span>Pandas</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project6.jpg"
-                             alt="Student Performance Predictor">
-
-                        <h2>
-                            Student Performance Predictor
-                        </h2>
-
-                        <p>
-                            Machine learning based student
-                            performance prediction.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 7 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            📸
-                        </div>
-
-                        <h2>
-                            Smart Attendance System
-                        </h2>
-
-                        <p>
-                            AI based attendance system using
-                            face recognition to automatically
-                            record attendance.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>OpenCV</span>
-                            <span>AI</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project7.jpg"
-                             alt="Smart Attendance System">
-
-                        <h2>
-                            Smart Attendance System
-                        </h2>
-
-                        <p>
-                            Face recognition based automated
-                            attendance system.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 8 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            🌦️
-                        </div>
-
-                        <h2>
-                            Weather Prediction System
-                        </h2>
-
-                        <p>
-                            Machine learning system that analyzes
-                            weather data and predicts future
-                            conditions.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>ML</span>
-                            <span>Data Science</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project8.jpg"
-                             alt="Weather Prediction System">
-
-                        <h2>
-                            Weather Prediction System
-                        </h2>
-
-                        <p>
-                            Data science and machine learning
-                            based weather prediction.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 9 -->
-
-            <div class="project-card flip-card">
-
-                <div class="flip-inner">
-
-                    <div class="flip-front">
-
-                        <div class="project-image">
-                            📄
-                        </div>
-
-                        <h2>
-                            AI Resume Analyzer
-                        </h2>
-
-                        <p>
-                            AI powered application that analyzes
-                            resumes and matches skills with
-                            job requirements.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>NLP</span>
-                            <span>ML</span>
-                        </div>
-
-                        <button class="view-project"
-                                onclick="flipCard(this)">
-                            View Project
-                        </button>
-
-                    </div>
-
-
-                    <div class="flip-back">
-
-                        <img src="images/project9.jpg"
-                             alt="AI Resume Analyzer">
-
-                        <h2>
-                            AI Resume Analyzer
-                        </h2>
-
-                        <p>
-                            NLP based resume analysis and
-                            skill matching system.
-                        </p>
-
-                        <button class="back-button"
-                                onclick="flipCard(this)">
-                            ← Back
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
 
         </div>
 
-    </section>
 
 
-    <footer>
+        <!-- PROJECT 2 -->
 
-        © 2026 Radesh | AI Engineer Portfolio
+        <div class="project-card flip-card">
 
-    </footer>
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        🧠
+                    </div>
+
+                    <h2>
+                        Machine Learning Analytics
+                    </h2>
+
+                    <p>
+                        Prediction and classification models
+                        using Python and machine learning
+                        algorithms.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Pandas</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
 
 
-    <script src="script.js"></script>
+                <div class="flip-back">
 
-</body>
+                    <img src="project2.jpg"
+                         alt="Machine Learning Analytics">
 
-</html>
+                    <h2>
+                        Machine Learning Analytics
+                    </h2>
+
+                    <p>
+                        Data-driven prediction and
+                        classification using machine learning.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        🤖
+                    </div>
+
+                    <h2>
+                        AI Ticket Management System
+                    </h2>
+
+                    <p>
+                        AI powered system that automatically
+                        categorizes and manages support requests.
+                    </p>
+
+                    <div class="tags">
+                        <span>NLP</span>
+                        <span>AI</span>
+                        <span>Cloud</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project3.jpg"
+                         alt="AI Ticket Management System">
+
+                    <h2>
+                        AI Ticket Management System
+                    </h2>
+
+                    <p>
+                        AI powered ticket classification
+                        and management system.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        💬
+                    </div>
+
+                    <h2>
+                        AI Chatbot
+                    </h2>
+
+                    <p>
+                        Intelligent chatbot that understands
+                        user queries and provides automated
+                        responses.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>AI</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project4.jpg"
+                         alt="AI Chatbot">
+
+                    <h2>
+                        AI Chatbot
+                    </h2>
+
+                    <p>
+                        Natural language based chatbot
+                        for automated conversations.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 5 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        👁️
+                    </div>
+
+                    <h2>
+                        Face Detection System
+                    </h2>
+
+                    <p>
+                        Computer vision application that
+                        detects human faces from images
+                        and camera input.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>AI</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project5.jpg"
+                         alt="Face Detection System">
+
+                    <h2>
+                        Face Detection System
+                    </h2>
+
+                    <p>
+                        Computer vision based face
+                        detection application.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 6 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        📊
+                    </div>
+
+                    <h2>
+                        Student Performance Predictor
+                    </h2>
+
+                    <p>
+                        Machine learning model that analyzes
+                        student data and predicts performance.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Pandas</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project6.jpg"
+                         alt="Student Performance Predictor">
+
+                    <h2>
+                        Student Performance Predictor
+                    </h2>
+
+                    <p>
+                        Machine learning based student
+                        performance prediction.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 7 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        📸
+                    </div>
+
+                    <h2>
+                        Smart Attendance System
+                    </h2>
+
+                    <p>
+                        AI based attendance system using
+                        face recognition to automatically
+                        record attendance.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>AI</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project7.jpg"
+                         alt="Smart Attendance System">
+
+                    <h2>
+                        Smart Attendance System
+                    </h2>
+
+                    <p>
+                        Face recognition based automated
+                        attendance system.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 8 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        🌦️
+                    </div>
+
+                    <h2>
+                        Weather Prediction System
+                    </h2>
+
+                    <p>
+                        Machine learning system that analyzes
+                        weather data and predicts future
+                        conditions.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Data Science</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project8.jpg"
+                         alt="Weather Prediction System">
+
+                    <h2>
+                        Weather Prediction System
+                    </h2>
+
+                    <p>
+                        Data science and machine learning
+                        based weather prediction.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 9 -->
+
+        <div class="project-card flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <div class="project-image">
+                        📄
+                    </div>
+
+                    <h2>
+                        AI Resume Analyzer
+                    </h2>
+
+                    <p>
+                        AI powered application that analyzes
+                        resumes and matches skills with
+                        job requirements.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>ML</span>
+                    </div>
+
+                    <button class="view-project"
+                            onclick="flipCard(this)">
+                        View Project
+                    </button>
+
+                </div>
+
+
+                <div class="flip-back">
+
+                    <img src="project9.jpg"
+                         alt="AI Resume Analyzer">
+
+                    <h2>
+                        AI Resume Analyzer
+                    </h2>
+
+                    <p>
+                        NLP based resume analysis and
+                        skill matching system.
+                    </p>
+
+                    <button class="back-button"
+                            onclick="flipCard(this)">
+                        ← Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Radesh | AI Engineer Portfolio
+
+</footer>
+
+
+<script src="script.js"></script>
+```
